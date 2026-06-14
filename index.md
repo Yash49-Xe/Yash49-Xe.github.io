@@ -249,7 +249,7 @@
 
   <!-- ── Hero ── -->
   <section class="hero">
-    <div class="avatar"><img src="my_photo.png" alt="YR"></div>
+    <div class="avatar"><img src="IMG_20260509_002522.png" alt="YR"></div>
     <div class="hero-text">
       <h1>Yash Raj</h1>
       <div class="role">B.Tech · Mathematics &amp; Scientific Computing</div>
