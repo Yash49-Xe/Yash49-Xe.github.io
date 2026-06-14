@@ -249,7 +249,7 @@
 
   <!-- ── Hero ── -->
   <section class="hero">
-    <div class="avatar">YR</div>
+    <div class="avatar"><img src="my_photo.png" alt="YR"></div>
     <div class="hero-text">
       <h1>Yash Raj</h1>
       <div class="role">B.Tech · Mathematics &amp; Scientific Computing</div>
@@ -291,6 +291,7 @@
         <span class="skill sk-ds">Python</span>
         <span class="skill sk-ds">Pandas</span>
         <span class="skill sk-ds">NumPy</span>
+        <span class="skill sk-ds">SciPy</span>
         <span class="skill sk-ds">Matplotlib</span>
         <span class="skill sk-ds">Seaborn</span>
         <span class="skill sk-ds">Jupyter</span>
@@ -301,6 +302,8 @@
       <div class="skill-group-label">Backend &amp; APIs</div>
       <div class="skill-pills">
         <span class="skill sk-be">FastAPI</span>
+        <span class="skill sk-be">SQLite</span>
+        <span class="skill sk-be">PyArrow</span>
         <span class="skill sk-be">Java</span>
         <span class="skill sk-be">Uvicorn</span>
       </div>
@@ -321,8 +324,57 @@
 
   <div class="proj-card">
     <div class="proj-header">
+      <h3>Automated Wealth &amp; Portfolio Optimization API</h3>
+      <a class="proj-link-btn" href="https://github.com/Yash49-Xe/portfolio-optimization-api" target="_blank" rel="noopener">View repo →</a>
+    </div>
+    <p>
+      An asynchronous backend microservice that ingests real-time EOD price data and US Treasury rates from
+      the Financial Modeling Prep API and computes the mathematically optimal capital allocation across a
+      multi-asset portfolio. A 24-hour background sync worker decouples data ingestion from the API layer,
+      keeping response times low regardless of external API latency.
+    </p>
+    <div class="proj-insight">
+      <strong>Optimization approach:</strong> Maximizes the Sharpe Ratio — excess return over the live
+      risk-free rate, divided by portfolio standard deviation — subject to full capital allocation and no
+      short selling, using SLSQP constrained optimization on the Efficient Frontier.
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">Python</span>
+      <span class="proj-tag">FastAPI</span>
+      <span class="proj-tag">SciPy</span>
+      <span class="proj-tag">Pandas</span>
+      <span class="proj-tag">NumPy</span>
+      <span class="proj-tag">SQLite</span>
+      <span class="proj-tag">httpx</span>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <h3>Dynamic Pricing Optimization Engine</h3>
+      <a class="proj-link-btn" href="https://github.com/Yash49-Xe/dynamic-pricing-engine" target="_blank" rel="noopener">View repo →</a>
+    </div>
+    <p>
+      A high-performance microservice that computes the mathematically optimal price for products to maximize
+      profit. Uses constrained minimization to locate the exact peak of a profit function by balancing base
+      costs, dynamic demand multipliers, and competitor pricing. PyArrow loads a compressed Parquet database
+      directly into RAM on boot, enabling Pandas Boolean indexing across 100,000+ synthetic products in
+      milliseconds.
+    </p>
+    <div class="proj-tags">
+      <span class="proj-tag">Python</span>
+      <span class="proj-tag">FastAPI</span>
+      <span class="proj-tag">SciPy</span>
+      <span class="proj-tag">Pandas</span>
+      <span class="proj-tag">PyArrow</span>
+      <span class="proj-tag">NumPy</span>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
       <h3>E-Commerce Customer RFM Segmentation API</h3>
-      <a class="proj-link-btn" href="#" target="_blank" rel="noopener">View repo →</a>
+      <a class="proj-link-btn" href="https://github.com/Yash49-Xe/ecommerce-rfm-api" target="_blank" rel="noopener">View repo →</a>
     </div>
     <p>
       An end-to-end data science pipeline and REST API for customer segmentation. Processes 100,000+ real-world
@@ -340,25 +392,6 @@
       <span class="proj-tag">Pandas</span>
       <span class="proj-tag">Seaborn</span>
       <span class="proj-tag">RFM Analysis</span>
-    </div>
-  </div>
-
-  <div class="proj-card">
-    <div class="proj-header">
-      <h3>Sustainable Shopping Assistant</h3>
-      <a class="proj-link-btn" href="#" target="_blank" rel="noopener">View repo →</a>
-    </div>
-    <p>
-      A full-stack mobile application delivering AI-powered sustainability insights at the point of purchase.
-      Integrates a Flutter frontend with a Python/FastAPI backend and Groq AI to provide real-time,
-      data-driven recommendations for eco-conscious decision-making.
-    </p>
-    <div class="proj-tags">
-      <span class="proj-tag">Flutter</span>
-      <span class="proj-tag">Dart</span>
-      <span class="proj-tag">FastAPI</span>
-      <span class="proj-tag">Python</span>
-      <span class="proj-tag">Groq AI</span>
     </div>
   </div>
 
