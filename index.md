@@ -60,6 +60,10 @@
       box-shadow: 0 0 0 1px #c4c0f0;
     }
 
+    .myPhoto {
+      border-radius: 50%;
+    }
+
     .hero-text h1 { font-size: 24px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
     .hero-text .role { font-size: 13px; color: #534ab7; font-weight: 500; margin-bottom: 12px; }
     .hero-text .bio { font-size: 14px; color: #555; line-height: 1.65; max-width: 520px; margin-bottom: 16px; }
@@ -249,7 +253,7 @@
 
   <!-- ── Hero ── -->
   <section class="hero">
-    <div class="avatar"><img src="IMG_20260509_002522.png" alt="YR"></div>
+    <div class="avatar"><img id = "myPhoto" src="IMG_20260509_002522.png" alt="YR"></div>
     <div class="hero-text">
       <h1>Yash Raj</h1>
       <div class="role">B.Tech · Mathematics &amp; Scientific Computing</div>
