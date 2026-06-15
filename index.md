@@ -58,9 +58,13 @@
       color: #534ab7;
       flex-shrink: 0;
       box-shadow: 0 0 0 1px #c4c0f0;
+      overflow: hidden;
     }
 
-    .myPhoto {
+    #myPhoto {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       border-radius: 50%;
     }
 
